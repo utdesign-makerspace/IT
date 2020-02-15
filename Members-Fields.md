@@ -13,3 +13,4 @@
 - Prefered Contact Method: (Int) 0-2: Email, Phone (SMS), Discord
 - Github Username: String
 - GitLab Username: String
+- Verified: Boolean (0/1) Defaults to false until netid@utdallas.edu is verification
