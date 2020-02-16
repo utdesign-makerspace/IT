@@ -1,11 +1,23 @@
 # Makerspace Laptop Deployment
 
-## Software
+## OS
 
-- [ ]  Creawesome Cura
-- [ ]  VSCode / VSCodemium
+POP! OS
+
+## Software
+- [ ] Chromium
+- [ ] Creawesome Cura
+- [ ] VSCode / VSCodemium
 - [ ] GIMP
 - [ ] Inkscape
 - [ ] Meshroom
 - [ ] Wine
+- [ ] Winetricks
 - [ ] 3D Gence Slicer
+- [ ] MultiMC
+- [ ] Spotify
+
+## Langs/Frameworks
+
+- [ ] Nodejs
+- [ ] 
