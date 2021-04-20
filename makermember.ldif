@@ -1,0 +1,61 @@
+dn: cn=makermember,cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: makermember
+olcAttributeTypes: {0}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.3
+ 6528.41485.59424.40001 NAME 'firstNameMaker' DESC 'First Name' EQUALITY cas
+ eIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {1}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.3
+ 6528.41485.59424.40002 NAME 'lastNameMaker' DESC 'Last Name' EQUALITY caseI
+ gnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {2}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.3
+ 6528.41485.59424.40003 NAME 'userDisplayName' DESC 'First Name + Last Name'
+  EQUALITY caseIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE
+  )
+olcAttributeTypes: {3}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.3
+ 6528.41485.59424.40004 NAME 'emailMaker' DESC 'E-Mail' EQUALITY caseIgnoreM
+ atch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {4}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.3
+ 6528.41485.59424.40005 NAME 'mobileMaker' DESC 'Mobile Phone Number' EQUALI
+ TY caseIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {5}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.3
+ 6528.41485.59424.40006 NAME 'rfid' DESC 'RFID code' EQUALITY caseIgnoreMatc
+ h SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {6}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.3
+ 6528.41485.59424.40007 NAME 'tokens' DESC 'Tokens' EQUALITY caseIgnoreMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {7}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.3
+ 6528.41485.59424.40008 NAME 'discord' DESC 'Discord Handle' EQUALITY caseIg
+ noreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {8}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.3
+ 6528.41485.59424.40009 NAME 'contactMethod' DESC 'Prefered Contact Method: 
+ (Int) 0-2: email, phone, discord' EQUALITY caseIgnoreMatch SYNTAX 1.3.6.1.4
+ .1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {9}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.3
+ 6528.41485.59424.40010 NAME 'githubUser' DESC 'Github Username' EQUALITY ca
+ seIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {10}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.
+ 36528.41485.59424.40011 NAME 'gitlabUser' DESC 'Gitlab Username' EQUALITY c
+ aseIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {11}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.
+ 36528.41485.59424.40012 NAME 'verified' DESC 'Is their E-Mail verified' EQU
+ ALITY caseIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {12}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.
+ 36528.41485.59424.40013 NAME 'userPasswordMaker' DESC 'User Password stored
+  as a Hash' EQUALITY caseIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 S
+ INGLE-VALUE )
+olcAttributeTypes: {13}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.
+ 36528.41485.59424.40014 NAME 'uidMaker' DESC 'Unique User ID' EQUALITY case
+ IgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcAttributeTypes: {14}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.
+ 36528.41485.59424.40015 NAME 'uidNumberMaker' DESC 'Unique User ID Number' 
+ EQUALITY caseIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE 
+ )
+olcAttributeTypes: {15}( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.
+ 36528.41485.59424.40016 NAME 'gidNumberMaker' DESC 'Group ID Number' EQUALI
+ TY caseIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE )
+olcObjectClasses: ( 1.2.840.113556.1.8000.2554.24219.61740.53461.19442.36
+ 528.41485.59424.40000 NAME 'makerMember' DESC 'Makerspace member class obje
+ ct' SUP top STRUCTURAL MUST cn MAY ( firstNameMaker $ lastNameMaker $ userD
+ isplayName $ emailMaker $ mobileMaker $ rfid $ tokens $ discord $ contactMe
+ thod $ githubUser $ gitlabUser $ verified $ userPasswordMaker $ uidMaker $ 
+ uidNumberMaker $ gidNumberMaker ) )
