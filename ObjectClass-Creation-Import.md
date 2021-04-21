@@ -34,7 +34,7 @@ More information on schema objectclass file creation can be found here: https://
 		
 		
 2. Import your .schema into the docker container, I like to use a mounted volume to send it through. You could also install nano to create the file and paste your schema.
-Use the command docker exec -it <container name> /bin/bash to get a bash shell in the container.
+Use the command `docker exec -it <container name> /bin/bash` to get a bash shell in the container.
 
 3. Change your .schema into an .ldif using slapd or manually.
 	Best tutorial I found, how to change your .schema into a .ldif: https://web.archive.org/web/20201118143551/https://www.zytrax.com/books/ldap/ch6/slapd-config.html
