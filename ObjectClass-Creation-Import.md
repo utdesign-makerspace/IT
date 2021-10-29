@@ -1,6 +1,3 @@
-so ya wanna learn how to add an objectclass to openLDAP? 
-use this guide created with too many hours and too many research tabs to create and import one.
-
 # ObjectClass creation and importing for OpenLDAP
 
 This guide will be using:
