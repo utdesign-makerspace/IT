@@ -1,0 +1,4 @@
+1. Install LTSC iso
+2. Run MAS as admin with network connection and activate LTSC
+3. Run Ninite setup
+4. Install pGina and follow pgina settings.txt

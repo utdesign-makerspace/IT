@@ -1,0 +1,24 @@
+--- GENERAL ---
+Tile image: C:\Windows\logo.bmp
+MOTD: Makerspace Local Login: %m
+
+--- PLUGIN SELECTION ---
+Check all 3 boxes for LDAP
+Check Session Limit
+
+Double Click LDAP Plugin:
+	LDAP Host: ldap.makerspace.local
+	Search DN: cn=admin,dc=utdmaker,dc=space
+	Search Password: LDAP admin password
+	Group DN Pattern: cn=%g,ou=groups,dc=utdmaker,dc=space
+	Member Attribute: memberUid
+	User DN Pattern: cn=%u,ou=members,dc=utdmaker,dc=space
+	Authorization Tab:
+		Default: Deny if computer for trained members, Allow if no training needed
+		Add rule: If member of LDAP group "admins" allow.
+		Add training rule: If member of LDAP group "{training group}" allow.
+	Gateway tab:
+		Add rule: If member of LDAP group "admins" add to local group "Administrators"
+	Save
+Double Click Session Limit: 
+	Global Time Limit (minutes): 360 or something reasonable.	
